@@ -1,0 +1,17 @@
+{
+  "name": "@synatic/parameter-parser",
+  "version": "0.0.1",
+  "description": "Parameter Parser",
+  "author": {
+    "name": "Martin Naude",
+    "email": "info@synatic.com"
+  },
+  "dependencies": {
+    "json-magic": "0.0.10",
+    "check-types": "10.0.0",
+    "deepcopy": "2.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
