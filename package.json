@@ -34,9 +34,9 @@
     "node": ">=12"
   },
   "dependencies": {
-    "check-types": "10.0.0",
-    "clone-deep": "^4.0.1",
-    "json-magic": "0.0.10"
+    "check-types": "11.1.2",
+    "clone-deep": "4.0.1",
+    "json-magic": "0.1.0"
   },
   "devDependencies": {
     "mocha": "^8.2.1",
