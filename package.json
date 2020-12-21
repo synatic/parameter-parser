@@ -4,6 +4,10 @@
   "description": "Parameter Parser",
   "main": "index.js",
   "scripts": {},
+  "files": [
+    "lib/",
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/synatic/parameter-parser.git"
@@ -15,12 +19,10 @@
   },
   "contributors": [
     {
-      "name": "Martin Naude",
-      "email": "info@synatic.com"
+      "name": "Martin Naude"
     },
     {
-      "name": "Thiren Bunsee",
-      "email": "thiren@filepounder.com"
+      "name": "Thiren Bunsee"
     }
   ],
   "license": "MIT",
@@ -29,14 +31,15 @@
   },
   "homepage": "https://github.com/synatic/parameter-parser#readme",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=12"
   },
   "dependencies": {
-    "json-magic": "0.0.10",
     "check-types": "10.0.0",
-    "deepcopy": "2.0.0"
+    "clone-deep": "^4.0.1",
+    "json-magic": "0.0.10"
   },
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^8.2.1",
+    "mongodb": "^3.6.3"
   }
 }

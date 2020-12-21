@@ -1,4 +1,6 @@
 const assert = require('assert');
+const {ObjectId} = require('mongodb');
+
 const paramParser=require('../index.js');
 
 describe('Parameter Parser', function() {
@@ -279,7 +281,37 @@ describe('Parameter Parser', function() {
             },"Object is not parsed correctly");
         });
 
+        it('should merge and copy the parameters', function() {
+            const objectId = new ObjectId();
+            const parameters = paramParser.parse({
+                val1:"a",
+                val2:"@a",
+                val3:{
+                    val4:"@c.d",
+                    val5: new ObjectId('5fe088832381ee343129d9c1'),
+                    val6:"@c.e"
+                },
+                val7:"test {@b}"
+            },{
+                a:1,
+                b:2,
+                c:{
+                    d:4,
+                    e: new ObjectId('5fe088832381ee343129d9c2')
+                }
+            }, {copy: true});
 
+            assert.deepEqual(parameters,{
+                val1:"a",
+                val2:1,
+                val3:{
+                    val4:4,
+                    val5:new ObjectId('5fe088832381ee343129d9c1'),
+                    val6:new ObjectId('5fe088832381ee343129d9c2')
+                },
+                val7:'test 2'
+            },"Object is not parsed correctly");
+        });
     });
 
     describe('Get Object Parameters',function(){
