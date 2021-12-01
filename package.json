@@ -49,7 +49,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.1.0",
     "mocha": "^8.2.1",
-    "mongodb": "^3.6.3",
+    "mongodb": "^4.2.1",
     "nyc": "^15.1.0",
     "prettier": "^2.2.1"
   }
