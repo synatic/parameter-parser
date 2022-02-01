@@ -45,7 +45,7 @@
     "clone-deep": "4.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.16.0",
+    "eslint": "^8.8.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.1.0",
     "mocha": "^8.2.1",
