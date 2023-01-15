@@ -1,6 +1,6 @@
 {
   "name": "@synatic/parameter-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parameter Parser",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "keywords": [],
   "author": {
-    "name": "FilePounder Inc",
+    "name": "Synatic Inc",
     "url": "https://synatic.com"
   },
   "contributors": [
@@ -41,16 +41,16 @@
   },
   "dependencies": {
     "@synatic/json-magic": "^1.0.0",
-    "check-types": "11.1.2",
+    "check-types": "11.2.2",
     "clone-deep": "4.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.16.0",
+    "eslint": "^8.17.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^8.1.0",
-    "mocha": "^8.2.1",
-    "mongodb": "^3.6.3",
+    "eslint-config-prettier": "^8.5.0",
+    "mocha": "^10.0.0",
+    "mongodb": "^4.7.0",
     "nyc": "^15.1.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.6.2"
   }
 }
