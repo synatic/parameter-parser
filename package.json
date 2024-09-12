@@ -40,8 +40,8 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@synatic/json-magic": "^1.0.0",
-    "check-types": "11.2.2",
+    "@synatic/json-magic": "^1.1.0",
+    "check-types": "11.2.3",
     "clone-deep": "4.0.1"
   },
   "devDependencies": {
@@ -49,8 +49,8 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
     "mocha": "^10.0.0",
-    "mongodb": "^4.7.0",
-    "nyc": "^15.1.0",
-    "prettier": "^2.6.2"
+    "mongodb": "^6.8.1",
+    "nyc": "^17.0.0",
+    "prettier": "^3.3.3"
   }
 }
