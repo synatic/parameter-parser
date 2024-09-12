@@ -1,6 +1,6 @@
 {
   "name": "@synatic/parameter-parser",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Parameter Parser",
   "main": "index.js",
   "scripts": {
