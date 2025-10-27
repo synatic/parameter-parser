@@ -3,6 +3,10 @@ name: "NPM Publish"
 on:
   release:
     types: [created]
+      
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   build:
@@ -13,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           registry-url: https://registry.npmjs.org/
       # Skip post-install scripts here, as a malicious
       # script could steal NODE_AUTH_TOKEN.
@@ -35,7 +39,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           registry-url: https://registry.npmjs.org/
       # Skip post-install scripts here, as a malicious
       # script could steal NODE_AUTH_TOKEN.
@@ -44,5 +48,3 @@ jobs:
 
       - name: Run NPM publish
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_SYNATIC}}
