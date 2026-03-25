@@ -4,7 +4,9 @@
   "description": "Parameter Parser",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint --config eslint.config.cjs .",
+    "lint-fix": "eslint --config eslint.config.cjs . --fix",
+    "lint-errors": "eslint --config eslint.config.cjs . --quiet",
     "prettier": "prettier . --write",
     "test": "mocha --reporter spec --bail --check-leaks test/",
     "test-ci": "nyc --reporter text-summary mocha -- --reporter spec --check-leaks test/",
@@ -37,7 +39,7 @@
   },
   "homepage": "https://github.com/synatic/parameter-parser#readme",
   "engines": {
-    "node": ">=12"
+    "node": ">=22"
   },
   "dependencies": {
     "@synatic/json-magic": "^1.1.0",
@@ -45,12 +47,15 @@
     "clone-deep": "4.0.1"
   },
   "devDependencies": {
-    "eslint": "^8.17.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^8.5.0",
-    "mocha": "^10.0.0",
-    "mongodb": "^6.8.1",
-    "nyc": "^17.0.0",
-    "prettier": "^3.3.3"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-sonarjs": "^4.0.2",
+    "globals": "^17.4.0",
+    "mocha": "^11.7.5",
+    "mongodb": "^7.1.1",
+    "nyc": "^18.0.0",
+    "prettier": "^3.8.1"
   }
 }
