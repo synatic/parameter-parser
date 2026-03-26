@@ -42,7 +42,7 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@synatic/json-magic": "^1.1.0",
+    "@synatic/json-magic": "^2.0.1",
     "check-types": "11.2.3",
     "clone-deep": "4.0.1"
   },
