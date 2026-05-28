@@ -1,6 +1,6 @@
 {
   "name": "@synatic/parameter-parser",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Parameter Parser",
   "main": "index.js",
   "scripts": {
@@ -48,15 +48,15 @@
     "clone-deep": "4.0.1"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "eslint": "^10.1.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.5",
-    "eslint-plugin-sonarjs": "^4.0.2",
-    "globals": "^17.4.0",
-    "mocha": "^12.0.0-beta-10",
-    "mongodb": "^7.1.1",
-    "nyc": "^18.0.0",
-    "prettier": "^3.8.1"
+    "@eslint/js": "10.0.1",
+    "eslint": "10.4.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.5",
+    "eslint-plugin-sonarjs": "4.0.3",
+    "globals": "17.6.0",
+    "mocha": "12.0.0-beta-9.4",
+    "mongodb": "7.2.0",
+    "nyc": "18.0.0",
+    "prettier": "3.8.3"
   }
 }
